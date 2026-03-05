@@ -40,7 +40,7 @@ const client = new Client('https://api.example');
 const myArticleRes = client.go('/article/1');
 
 // Get the state. This does a GET request
-const myArticleState = await client.get();
+const myArticleState = await myArticleRes.get();
 
 // Lets update the title
 myArticleState.data.title = 'Hello world v2';
