@@ -46,7 +46,7 @@ const myArticleState = await myArticleRes.get();
 myArticleState.data.title = 'Hello world v2';
 
 // And save the article again
-await client.put(myArticleState);
+await myArticleRes.put(myArticleState);
 ```
 
 The State Object
